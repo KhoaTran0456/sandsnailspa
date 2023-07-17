@@ -29,6 +29,10 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Marcellus', serif;
 
 }
+.h4, h4 {
+    font-size: 22px;
+	letter-spacing: 3px;
+}
 
 ul.social-icons li {
 	display: inline-block;
@@ -56,6 +60,14 @@ ul.social-icons li a:hover {
 	background-color: #1d579e;
 	color: #fff;
 }
+
+.button-custom {
+	margin-top: 20px;
+
+}
+
+
+
 
 a.filled-button {
 	background-image: linear-gradient(to top, #0c2f50, #51ade5, #51ade5, #0c2f50);
@@ -164,7 +176,7 @@ ul.submenu > li:hover > a {
 	font-family: 'Marcellus';
 	font-size: 36px;
 	font-weight: 400;
-	color: #282828;
+	color: #1e476e;
 	margin-bottom: 15px;
 }
 
@@ -1606,3 +1618,92 @@ h4.font-small{
 	background-color: transparent;
 }
 
+
+/*---------------------------------------
+  PROJECTS              
+-----------------------------------------*/
+.projects-thumb {
+	border-radius: 0;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 24px;
+	transition: all 0.3s;
+	cursor: pointer;
+  }
+  
+  .projects-thumb-large {
+	/* min-height: 356px; */
+  }
+  
+  .projects-thumb:hover {
+	background: #fff;
+	box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  }
+  
+  .projects-thumb:hover .projects-image {
+	transform: scale(1.2);
+  }
+  
+  .projects-thumb:hover .projects-title-wrap {
+	padding-bottom: 5px;
+  }
+  
+  .projects-thumb:hover .custom-btn,
+  .projects-btn-wrap .custom-btn:hover {
+	background: var(--primary-color);
+  }
+  
+  .projects-title-wrap {
+	background: linear-gradient(to top, #060e18, #ffffff00);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 15px 25px 0px 25px;
+	transition: all 0.2s;
+  }
+  
+  .projects-small-title {
+	color: #fff;
+	text-transform: uppercase;
+  }
+  
+  .projects-title {
+	color: #fff;
+	line-height: 1.1;
+	font-weight: bold;
+  }
+  
+  .projects-image {
+	border-radius: 0px;
+	width: 100%;
+	height: auto;
+	transition: all 0.3s;
+  }
+  
+  .projects-thumb-large .projects-image {
+	object-fit: cover;
+	height: 100%;
+  }
+  
+  .projects-btn-wrap {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+  }
+  
+  .projects-btn-wrap .custom-btn {
+	font-size: 30px;
+	padding: 7.5px 15px;
+  }
+
+  
+  .service .btn-black-border {
+    color: #fff !important;
+    border: 2px solid !important;
+    border-image-slice: 2 !important;
+    border-width: 2px !important;
+    border-image-source: linear-gradient(45deg, #0c2f50, #51ade5, #0c2f50, #51ade5, #0c2f50) !important;
+    padding: 10px !important;
+    background: transparent !important; 
+}
